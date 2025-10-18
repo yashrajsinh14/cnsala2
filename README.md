@@ -1,15 +1,9 @@
-from flask import Flask, render_template_string
-import os
-
-app = Flask(_name_)
-
-HTML_TEMPLATE = '''
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Royal Malware Simulator</title>
+    <title>Royal Malware Simulator - YASHRAJSINH RATHOD ZANZMER</title>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -435,12 +429,3 @@ HTML_TEMPLATE = '''
     </script>
 </body>
 </html>
-'''
-
-@app.route('/')
-def home():
-    return render_template_string(HTML_TEMPLATE)
-
-if _name_ == '_main_':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=True)
